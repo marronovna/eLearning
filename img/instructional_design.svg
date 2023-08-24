@@ -1,0 +1,17 @@
+<svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 12">
+<g id="Group 11">
+<circle id="Ellipse 9" cx="42.5" cy="42.5" r="42.5" fill="#DCCE90"/>
+<g id="icon">
+<g id="Rectangle 62">
+<mask id="path-2-inside-1_1_67" fill="white">
+<rect x="29.3231" y="20.0909" width="40.9952" height="26.9638" rx="0.728751"/>
+</mask>
+<rect x="29.3231" y="20.0909" width="40.9952" height="26.9638" rx="0.728751" stroke="white" stroke-width="4.37251" mask="url(#path-2-inside-1_1_67)"/>
+</g>
+<path id="Vector 5" d="M26.3948 30.2935H23.0973C22.6948 30.2935 22.3685 30.6197 22.3685 31.0222V55.4354C22.3685 55.8378 22.6948 56.1641 23.0973 56.1641H61.9029C62.3054 56.1641 62.6317 55.8378 62.6317 55.4354V50.3341" stroke="white" stroke-width="2.18625"/>
+<path id="Vector 6" d="M18.7083 39.0385H15.4108C15.0083 39.0385 14.682 39.3647 14.682 39.7672V64.1804C14.682 64.5828 15.0083 64.9091 15.4108 64.9091H54.2164C54.6189 64.9091 54.9452 64.5828 54.9452 64.1804V59.0791" stroke="white" stroke-width="2.18625"/>
+</g>
+</g>
+</g>
+</svg>
