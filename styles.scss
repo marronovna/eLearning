@@ -1,0 +1,1697 @@
+@import url(https://db.onlinewebfonts.com/c/fa8130306820ed66d55b5d476b0f5d98?family=Museo+Sans+Cyrl+300+Regular);
+@import url(https://db.onlinewebfonts.com/c/a294fb387eda4c52a3224aa008dcb2fe?family=Museo+Sans+Cyrl+500+Regular);
+@import url(https://db.onlinewebfonts.com/c/80f19ceeaa4fad006baf230b64f4dac9?family=Museo+Sans+Cyrl+700+Regular);
+
+
+@font-face {
+    font-family: "Museo Sans Cyrl 300 Regular";
+    src: url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.eot");
+    src: url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.svg#Museo Sans Cyrl 300 Regular")format("svg");
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot");
+    src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.svg#Museo Sans Cyrl 500 Regular")format("svg");
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl 700 Regular";
+    src: url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.eot");
+    src: url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.svg#Museo Sans Cyrl 700 Regular")format("svg");
+}
+
+
+$full-width: 100%;
+
+//colors:
+
+$green-basic: rgba(61, 148, 140, 1);
+$green-lighter: rgba(65, 162, 151, 1);
+$dark-text: rgba(66, 66, 66, 1);
+$the-darkest: rgba(52, 52, 52, 1);
+$dark: rgba(56, 56, 56, 1);
+$darkmode: #343434;
+$dark-lighter: rgba(65, 65, 65, 1);
+$grey-header: rgba(153, 155, 154, 1);
+$grey-opacity: rgba(162, 162, 162, 0.34);
+$beige: rgba(235, 235, 235, 1);
+
+
+// colors 'types':
+$gold-bg: rgba(220, 206, 144, 1);
+$green-bg: rgba(41, 180, 173, 1);
+$green-border: rgba(35, 182, 176, 1);
+$light-border: rgba(181, 183, 182, 1);
+
+// forms
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin bg-img-cover {
+    width: $full-width;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@mixin flow_line {
+    display: flex;
+    flex-basis: 1158px;
+}
+
+
+@mixin round {
+    border-radius: 50%;
+}
+
+@mixin a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a {
+    @include a;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+    .carousel-item {
+
+        img {
+            height: 390px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+
+
+    .carousel {
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+
+
+        .static-carousel-item {
+
+            @include column-center;
+            justify-content: center;
+            background-color: #fff;
+            height: 370px;
+            padding: 10px;
+            border-radius: 20px;
+            width: 240px;
+            z-index: 1;
+        }
+
+        .logo-colorful {
+
+            margin-top: 20%;
+
+            img {
+                max-width: 177px;
+                height: 37px;
+                padding: 0px;
+            }
+
+            @include column;
+
+        }
+
+        .logo__bottom {
+            font-family: "Museo Sans Cyrl 500 Regular";
+            font-size: 0.7em;
+            letter-spacing: 0.2em;
+            padding-left: 55%;
+            margin-top: -7px;
+            margin-right: 1.1em;
+        }
+
+        .line {
+            display: block;
+            height: 1px;
+            background-color: $gold-bg;
+            width: 176px;
+            margin: 5px 0px;
+        }
+
+        .text {
+            font-family: "Museo Sans Cyrl 500 Regular";
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+
+
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-indicators {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+
+    li {
+        display: flex;
+        border: none;
+        text-decoration: none;
+        list-style: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+}
+
+
+.dark-mode {
+    background-color: $darkmode;
+
+    header {
+
+        .carousel {
+
+            .static-carousel-item {
+                background-color: $dark-lighter;
+                color: #ffffffd6;
+
+            }
+        }
+    }
+
+    .services_we_provide__examples__item {
+        .caption {
+            font-family: "Museo Sans Cyrl 300 Regular";
+            color: #ffffffd6;
+        }
+    }
+
+    .services_we_provide {
+
+        input,
+        ::placeholder {
+            background: $dark-lighter;
+            color: #ffffffd6;
+        }
+
+        .row_buttons_group {
+            color: #ffffffd6;
+
+            .grey_button {
+                color: $darkmode;
+            }
+        }
+
+        .down_arrow {
+            background-color: #ffffffd6;
+            border-radius: 50%;
+        }
+
+        .services_we_provide__examples__item {
+            .header p {
+                color: $grey-header;
+            }
+        }
+
+        .num_buttons button {
+
+            color: #ffffff3a;
+
+            &:active {
+                background-color: #ffffff1b;
+                color: #ffffffd6;
+            }
+
+            &:hover {
+                background-color: #ffffff1b;
+            }
+
+        }
+
+        .num_buttons {
+
+            .arr-prev,
+            .arr-next {
+                background-color: #b3b3a85c;
+            }
+        }
+    }
+
+    .instructional_design .instructional_design_text,
+    .checkpoint {
+        color: #ffffffd6;
+
+    }
+
+    #chat-widget {
+
+        display: none;
+
+
+        &.show {
+            border-radius: 10px;
+            background: #414141;
+            box-shadow: 0px 3.8181819915771484px 15.272727966308594px 0px rgba(52, 52, 52, 0.10);
+            background-color: $dark-lighter;
+
+        }
+
+        #chat-messages {
+            color: rgb(255, 255, 255);
+        }
+
+        .message-time {
+            color: rgba(246, 246, 246, 0.441);
+        }
+
+        #chat-input {
+            background-color: #545454;
+            color: rgb(233, 233, 233);
+        }
+
+        .input-content {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: #545454;
+            border-top: solid 2px $light-border;
+        }
+
+        .chat-message {
+
+            &.user {
+                background-color: rgba(255, 255, 255, 0.05);
+                color: #e6e6e6;
+            }
+
+            &.operator {
+                background-color: rgba(41, 180, 173, 0.15);
+                color: #baa2a2;
+            }
+        }
+
+
+    }
+}
+
+
+.toggle-button {
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    margin-top: 20%;
+}
+
+.toggle-text {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    background-color: $beige;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.toggle-ball {
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    background-image: url('img/day.png');
+    @include bg-img-cover;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 85%;
+    bottom: 30px;
+}
+
+.dark-mode .toggle-ball {
+    background-image: url('img/night.png');
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    padding: 9px;
+    position: relative;
+    left: -25%;
+    bottom: 30px;
+
+}
+
+.dark-mode .toggle-text {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    color: #fff;
+    background-color: $the-darkest;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+
+.toggle-button {
+    &.dark-mode {
+        background-color: inherit;
+    }
+}
+
+
+p {
+    margin: 0;
+}
+
+
+button,
+a,
+input {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    background-color: inherit;
+    border: none;
+    outline: none !important;
+}
+
+.block {
+    display: flex;
+    border-radius: 20px;
+}
+
+
+.button_color {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    @include center;
+    flex-direction: row;
+    border-radius: 27px;
+    padding: 5px 30px;
+    max-width: 150px;
+    background: $green-basic;
+    border: 2px solid $green-basic;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0.1px rgba(10, 41, 10, 0.403);
+}
+
+
+.services_we_provide {
+
+    @include column-center;
+    gap: 35px;
+    padding: 50px;
+
+    .header {
+        font-family: "Museo Sans Cyrl 700 Regular";
+        color: $grey-header;
+        align-self: start;
+    }
+
+    .services_we_provide__search__row {
+        font-family: "Museo Sans Cyrl 500 Regular";
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+        gap: 5%;
+
+        .row_buttons_group {
+            @include center;
+            font-size: 16px;
+            gap: 10px;
+
+            .round_arrow {
+                @include center;
+                @include round;
+                background-color: $beige;
+                width: 25px;
+                height: 25px;
+            }
+
+
+            .round_arrow {
+                @include center;
+                @include round;
+                background-color: $beige;
+                width: 25px;
+                height: 25px;
+            }
+
+            .typesbar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                gap: 6px;
+                border-radius: 14px;
+                padding: 5px;
+                background-color: $beige;
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+                &.show {
+                    max-height: 32px;
+                    opacity: 1;
+
+                    .gold-bg,
+                    .green-bg,
+                    .green-border,
+                    .grey-border {
+                        @include round;
+                        height: 16px;
+                        width: 16px;
+                        transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+                    }
+
+                    .gold-bg {
+                        background-color: $gold-bg;
+                    }
+
+                    .green-bg {
+                        background-color: $green-basic;
+                    }
+
+                    .green-border {
+                        border: 1px solid $green-basic;
+                    }
+
+                    .grey-border {
+                        border: 1px solid $light-border;
+                    }
+                }
+            }
+
+
+            .grey_button {
+                font-family: "Museo Sans Cyrl 500 Regular";
+                @include center;
+                background-color: $beige;
+                max-height: min-content;
+                max-width: min-content;
+                padding: 5px;
+                font-size: 15px;
+                border-radius: 14.5px;
+
+            }
+
+            .hidden_vars {
+                font-family: "Museo Sans Cyrl 500 Regular";
+                display: flex;
+                gap: 5px;
+                max-height: 0;
+                opacity: 0;
+                transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+                &.show {
+                    gap: 5px;
+                    max-height: 120px;
+                    opacity: 1;
+
+                    p {
+                        font-family: "Museo Sans Cyrl 500 Regular";
+                        display: flex;
+                        gap: 5px;
+
+                        .grey_button {
+                            margin: 2px;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+#swp-gold-bg,
+#swp-green-bg,
+#swp-green-border,
+#swp-light-border {
+    display: none;
+
+    &.active {
+        display: flex;
+        justify-content: center;
+    }
+
+    .services_we_provide__examples__item {
+        .gold-bg {
+            .short_line {
+                background-color: $gold-bg;
+                height: 1px;
+            }
+        }
+    }
+
+
+    .services_we_provide__examples__item {
+        font-family: "Museo Sans Cyrl 500 Regular";
+        max-width: 25%;
+        @include column;
+        padding: 10px;
+        max-width: 250px;
+        font-size: 16px;
+        line-height: 145%;
+
+        .header {
+            font-family: "Museo Sans Cyrl 700 Regular";
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: rgba(33, 33, 33, 1);
+        }
+
+        img {
+            max-width: 85px;
+        }
+
+    }
+
+
+
+}
+
+
+
+.services_we_provide__search {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 300px;
+
+
+    input {
+        resize: none;
+        outline: none;
+        border: none;
+        background-color: $beige;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 27px;
+        max-width: 300px;
+        padding: 10px 24px 10px 24px;
+    }
+
+
+    ::placeholder {
+        font-family: "Museo Sans Cyrl 500 Regular";
+        background-color: $beige;
+        color: rgba(52, 52, 52, 1);
+    }
+
+}
+
+
+
+.num_buttons {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    @include center;
+
+    button {
+        @include a;
+        @include center;
+        @include round;
+        font-size: 16px;
+        color: $the-darkest;
+        height: 30px;
+        width: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $beige;
+            transition: 0.3s;
+        }
+
+        &:active {
+            background-color: $beige;
+        }
+    }
+
+}
+
+
+.services_we_provide__examples {
+    display: flex;
+    justify-content: center;
+}
+
+.services_we_provide__examples__item {
+    .gold-bg {
+        .short_line {
+            background-color: $gold-bg;
+            height: 1px;
+        }
+    }
+}
+
+.services_we_provide__examples__item {
+    max-width: 20%;
+    @include column;
+    padding: 10px;
+    max-width: 200px;
+    font-size: 14px;
+
+    .header {
+        font-family: 'Museo Sans Cyrl 500 Regular 700';
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        max-width: 85px;
+    }
+
+    .short_line {
+        display: block;
+        height: 1px;
+        width: 200px;
+    }
+}
+
+
+.border_button {
+    border-radius: 45px;
+    padding: 10px 40px;
+    border: 2px solid #fbfbfd;
+    color: #fdfdff;
+    background-color: inherit;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+footer {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 100%;
+    justify-content: center;
+    background-color: $the-darkest;
+    color: rgba(146, 146, 146, 1);
+
+    .footer_buttons_group {
+        @include column;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+
+    .copyright {
+        font-family: "Museo Sans Cyrl 500 Regular";
+        @include center;
+        background-color: rgba(56, 56, 56, 1);
+        color: rgba(89, 89, 89, 1);
+        padding: 15px;
+    }
+}
+
+
+.header {
+    font-family: "Museo Sans Cyrl 700 Regular";
+    font-size: 50px;
+}
+
+.hader_mini {
+    font-size: 30px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+
+html {
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Museo Sans Cyrl 500 Regular', sans-serif;
+    font-size: 16px;
+    @include column-center;
+    transition: background-color 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url('img/top_bg_img.png');
+    padding: 130px;
+    @include bg-img-cover;
+}
+
+.division {
+    width: $full-width;
+    background-color: $green-basic;
+    height: 10px;
+}
+
+.navbar {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    justify-content: center;
+    width: $full-width;
+    background-color: $the-darkest;
+    color: rgba(240, 248, 255, 0.453);
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.navbar_logo {
+
+    @include column;
+
+    .navbar_logo__bottom {
+        font-size: 0.7em;
+        letter-spacing: 0.2em;
+        align-self: flex-end;
+        margin-top: -7px;
+        margin-right: 1.1em;
+    }
+
+}
+
+.navbar_buttons {
+    @include center;
+}
+
+.navbar_buttons__a {
+    padding: 10px;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.form-for-border {
+    align-self: flex-start;
+    width: 90%;
+    padding: 50px 50px 50px 0px;
+    border-radius: 20px;
+
+}
+
+
+.we_design_learning {
+
+    @include bg-img-cover;
+    background-image: url('img/We\ Design\ Learning_bg.png');
+    padding-top: 24px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+    .header {
+        font-family: "Museo Sans Cyrl 700 Regular";
+        font-size: 75px;
+        color: rgba(66, 66, 66, 1);
+
+        span {
+            font-size: 80px;
+        }
+    }
+
+    .description {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        font-size: 35px;
+    }
+
+    .we_design_learning__group {
+        display: flex;
+        bottom: 100%;
+    }
+
+    .we_design_learning__group_col {
+        @include column;
+        justify-content: center;
+        gap: 30px;
+        max-width: 437px;
+    }
+
+}
+
+
+
+.instructional_design {
+    font-family: "Museo Sans Cyrl 500 Regular";
+    font-size: 16px;
+    padding: 50px;
+    color: $dark-text;
+
+    .header {
+        font-family: "Museo Sans Cyrl 700 Regular";
+        color: rgba(153, 155, 154, 1);
+    }
+
+    .instructional_design_text {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        color: $dark-text;
+        @include column;
+        gap: 25px;
+        max-width: 540px;
+    }
+
+    .instructional_design_group_row {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        color: $dark-text;
+        @include center;
+        gap: 30px;
+    }
+
+    .instructional_design_round {
+        max-width: 390px;
+    }
+
+    .checkpoints {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        color: $dark-text;
+        @include column;
+        gap: 20px;
+        font-size: 16px;
+        line-height: 150%;
+
+        .checkpoint img {
+            margin-right: 10px;
+        }
+    }
+
+}
+
+
+.form_section {
+    font-family: "Museo Sans Cyrl 300 Regular";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $green-basic;
+    color: rgba(255, 255, 255, 1);
+    gap: 10px;
+    padding: 50px;
+
+    .form_content {
+        @include column-center;
+        gap: 10px;
+        max-width: 680px;
+
+        input,
+        textarea {
+            font-family: "Museo Sans Cyrl 300 Regular";
+            resize: none;
+            outline: none;
+            border: none;
+            background-color: $green-lighter;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            border-radius: 27px;
+            padding: 10px 24px;
+            width: 30em;
+        }
+
+        textarea {
+            height: 10em;
+        }
+
+        ::placeholder {
+            background-color: rgba(65, 162, 151, 1);
+            color: rgb(255, 255, 255);
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus {
+            background-color: transparent !important;
+            transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+            -webkit-text-fill-color: rgb(255, 255, 255) !important;
+        }
+    }
+
+}
+
+$darckmode-chat: rgba(65, 65, 65, 1);
+$secondary-color: #ccc;
+$green-neon: rgba(41, 180, 173, 1);
+
+.chat-wiget-button {
+    @include round;
+    @include center;
+    background-color: $green-neon;
+    border: none;
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+
+    img {
+        height: 66px;
+        width: 66px;
+    }
+}
+
+.chat-widget-button {
+    @include round;
+    @include center;
+    background-color: $green-neon;
+    border: none;
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+
+    img {
+        height: 66px;
+        width: 66px;
+    }
+
+}
+
+
+
+#chat-widget {
+
+    display: none;
+
+
+    &.show {
+        display: flex !important;
+        position: fixed;
+        bottom: 95px;
+        right: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 344px;
+        height: 420px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        z-index: 1;
+
+    }
+
+    button {
+        background-color: inherit;
+        border: none;
+    }
+
+    #chat-header {
+        font-family: "Museo Sans Cyrl 500 Regular";
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: $green-neon;
+        color: #fff;
+        padding: 15px 18px;
+        border-radius: 10px;
+
+        .right-group {
+            display: flex;
+            gap: 10px;
+
+            .chat-name {
+                font-size: 16px;
+            }
+
+            .chat-name-description {
+                font-size: 12px;
+                opacity: 0.5;
+            }
+
+        }
+    }
+
+
+    #chat-messages {
+        font-family: "Museo Sans Cyrl 500 Regular";
+        padding: 10px;
+        color: rgba(56, 56, 56, 1);
+        max-height: 200px;
+        overflow-y: auto;
+        font-size: 14px;
+
+        .message-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+
+            .timestamp {
+                font-size: 9px;
+                margin-top: 5px;
+                text-align: right;
+            }
+        }
+    }
+
+    .message-time {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        color: rgba(56, 56, 56, 0.25);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    #chat-input {
+        width: 100%;
+        color: rgba(56, 56, 56, 1);
+        height: 50px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .input-content {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        padding: 10px;
+        border-top: solid 2px rgba(235, 235, 235, 1);
+
+        .input-buttons {
+            display: flex;
+
+
+            .img-svg:active path {
+                fill: $green-neon;
+                transition: 0.5s;
+            }
+
+        }
+
+    }
+
+    .chat-message {
+        font-family: "Museo Sans Cyrl 300 Regular";
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+        &.user {
+            background-color: rgba(52, 52, 52, 0.05);
+            color: #3e3636;
+            text-align: right;
+        }
+
+        &.operator {
+            background-color: rgba(41, 180, 173, 0.05);
+            color: #000;
+            text-align: left;
+
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    header {
+        padding: 90px;
+    }
+
+    .carousel {
+
+        .static-carousel-item {
+            max-height: 320px;
+        }
+
+        .carousel-item img {
+            height: 340px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 476px) and (max-width: 1000px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .carousel-item {
+        max-height: 200px;
+        padding: 0px;
+
+        img {
+            max-height: 210px;
+            padding: 0px;
+        }
+    }
+
+
+    .carousel {
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: baseline;
+        }
+
+
+        .static-carousel-item {
+            @include column-center;
+            justify-content: flex-end;
+            background-color: #fff;
+            max-height: 200px;
+            padding: 0px;
+            border-radius: 10px;
+            max-width: 200px;
+            z-index: 1;
+
+            .text {
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    // toggle
+
+    .toggle-button {
+        height: 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+
+    .carousel-inner {
+        overflow: visible;
+    }
+
+    .carousel-indicators {
+        display: flex;
+        gap: 5px;
+
+        li {
+            display: flex;
+            border: none;
+            text-decoration: none;
+            list-style: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+        }
+    }
+
+    .services_we_provide {
+        max-width: 100%;
+
+        .services_we_provide__search__row {
+            flex-direction: column;
+            align-items: space-around;
+            padding: 10px;
+            gap: 20px;
+
+            input {
+                width: 100%;
+            }
+        }
+
+
+        #swp-gold-bg,
+        #swp-green-bg,
+        #swp-green-border,
+        #swp-light-border {
+            display: none;
+
+            &.active {
+                display: flex;
+                justify-content: center;
+            }
+
+            .services_we_provide__examples__item {
+                @include column;
+                padding: 10px;
+                max-width: 166px;
+                font-size: 14px;
+
+            }
+
+        }
+
+    }
+
+    // we design learning
+    .form-for-border {
+        .we_design_learning {
+            .we_design_learning__group_col {
+                gap: 10px;
+
+                .header {
+                    font-size: 65px;
+                }
+            }
+
+        }
+    }
+
+    //instructional-design
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .instructional_design {
+        padding: 10px;
+        margin-bottom: 40px;
+
+        .header {
+            max-width: 80%;
+            color: rgba(153, 155, 154, 1);
+            font-size: 50px
+        }
+
+        .instructional_design_text {
+            @include column;
+            gap: 25px;
+            max-width: 100%;
+        }
+
+        .instructional_design_group_row {
+            @include column-center;
+            gap: 20px;
+        }
+
+        .instructional_design_group_row {
+            &.sec-part {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+
+        .instructional_design_round img {
+            max-width: 320px;
+        }
+
+        .header,
+        .hader_mini {
+            text-align: center;
+        }
+
+
+    }
+
+    .form_section {
+
+        .header,
+        .hader_mini {
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 476px) {
+
+    .button_color {
+        padding: 10px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        transform: rotate(0deg);
+    }
+
+
+    .carousel {
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .static-carousel-item {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .carousel-inner {
+            position: relative;
+        }
+
+        .carousel-item {
+            display: none;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+
+            &.active {
+                display: flex;
+                opacity: 1;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+
+        .carousel-indicators {
+            display: none;
+        }
+    }
+
+    // nav
+
+    .navbar {
+        justify-content: baseline;
+        width: 100%;
+        background-color: $the-darkest;
+        color: rgba(240, 248, 255, 0.453);
+        font-size: 14px;
+        padding: 10px;
+
+        .navbar_buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 90%;
+
+            a {
+                width: 153px;
+            }
+        }
+    }
+
+
+    // swp
+
+    .services_we_provide {
+        max-width: 320px;
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 80%;
+        }
+
+        .services_we_provide__search__row {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .services_we_provide__search {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        max-width: 300px;
+    }
+
+    .services_we_provide__examples {
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .services_we_provide__examples__item {
+        max-width: 100%;
+    }
+
+    // we_design_learning
+
+    .form-for-border {
+        align-self: flex-start;
+        width: 100%;
+
+
+        .we_design_learning {
+            @include bg-img-cover;
+            background-image: url('img/We\ Design\ Learning_bg.png');
+            padding-top: 24px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            align-self: flex-start;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .wdl_man {
+
+                width: 207px;
+                height: 340px;
+                bottom: 100%;
+
+            }
+
+            .header {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.3em;
+                color: rgba(66, 66, 66, 1);
+
+                span {
+                    font-size: 40px;
+                }
+            }
+
+            .description {
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+        }
+    }
+
+    .we_design_learning {
+
+
+        .we_design_learning__group {
+            display: flex;
+
+            img {
+                align-self: flex-end;
+            }
+
+
+            .we_design_learning__group_col {
+                @include column;
+                max-width: 120px;
+                gap: 10px;
+                justify-content: space-around;
+                margin-bottom: 30px;
+            }
+
+        }
+
+    }
+
+    //instructional-design 
+
+    .instructional_design {
+        padding: 10px;
+        margin-bottom: 40px;
+
+        .instructional_design_round img {
+            max-width: 300px;
+        }
+
+        .header {
+            max-width: 80%;
+            color: rgba(153, 155, 154, 1);
+            font-size: 50px
+        }
+
+        .instructional_design_text {
+            @include column;
+            gap: 25px;
+            max-width: 100%;
+        }
+
+        .instructional_design_group_row {
+            @include column-center;
+            gap: 20px;
+        }
+
+        .instructional_design_group_row {
+            &.sec-part {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+
+
+        .header,
+        .hader_mini {
+            text-align: center;
+        }
+
+
+    }
+
+    .form_section {
+
+        width: 100%;
+        padding: 10px;
+
+        .form_content {
+            @include column-center;
+            gap: 10px;
+            max-width: 300px;
+
+            .header {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .hader_mini {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            input,
+            textarea {
+                padding: 15px;
+                width: 300px;
+            }
+
+            textarea {
+                height: 10em;
+            }
+
+            ::placeholder {
+                background-color: rgba(65, 162, 151, 1);
+                color: rgba(255, 255, 255, 0.695);
+            }
+        }
+
+        .header,
+        .hader_mini {
+            text-align: center;
+        }
+
+    }
+
+
+    #chat-widget {
+
+        display: none;
+
+
+        &.show {
+            max-width: 300px;
+
+        }
+
+
+    }
+
+}
+
+// scrolling
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: #e6ddddd8;
+    padding: 5px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $the-darkest;
+    padding: 5px;
+    width: 1em;
+}
