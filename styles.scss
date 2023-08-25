@@ -1490,7 +1490,21 @@ $green-neon: rgba(41, 180, 173, 1);
             flex-direction: column;
             gap: 20px;
         }
+
+        .row_buttons_group {
+            .hidden_vars {
+                &.show {
+                    p {
+                        flex-direction: column;
+                    }
+                }
+
+            }
+
+        }
     }
+
+
 
     .services_we_provide__search {
         display: flex;
