@@ -1,25 +1,21 @@
 @import url(https://db.onlinewebfonts.com/c/fa8130306820ed66d55b5d476b0f5d98?family=Museo+Sans+Cyrl+300+Regular);
 @import url(https://db.onlinewebfonts.com/c/a294fb387eda4c52a3224aa008dcb2fe?family=Museo+Sans+Cyrl+500+Regular);
 @import url(https://db.onlinewebfonts.com/c/80f19ceeaa4fad006baf230b64f4dac9?family=Museo+Sans+Cyrl+700+Regular);
-
 @font-face {
   font-family: "Museo Sans Cyrl 300 Regular";
   src: url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.eot");
   src: url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.woff") format("woff"), url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/fa8130306820ed66d55b5d476b0f5d98.svg#Museo Sans Cyrl 300 Regular") format("svg");
 }
-
 @font-face {
   font-family: "Museo Sans Cyrl 500 Regular";
   src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot");
   src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff") format("woff"), url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.svg#Museo Sans Cyrl 500 Regular") format("svg");
 }
-
 @font-face {
   font-family: "Museo Sans Cyrl 700 Regular";
   src: url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.eot");
   src: url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.woff") format("woff"), url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/80f19ceeaa4fad006baf230b64f4dac9.svg#Museo Sans Cyrl 700 Regular") format("svg");
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -32,9 +28,9 @@ a:hover {
 
 header {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 header {
@@ -42,48 +38,45 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow-x: hidden;
 }
-
 header .carousel-item img {
   height: 390px;
   padding: 10px;
   border-radius: 20px;
 }
-
 header .carousel .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 10px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 header .carousel .static-carousel-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #fff;
   height: 370px;
   padding: 10px;
@@ -91,7 +84,6 @@ header .carousel .static-carousel-item {
   width: 240px;
   z-index: 1;
 }
-
 header .carousel .logo-colorful {
   margin-top: 20%;
   display: -webkit-box;
@@ -99,16 +91,14 @@ header .carousel .logo-colorful {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
 header .carousel .logo-colorful img {
   max-width: 177px;
   height: 37px;
   padding: 0px;
 }
-
 header .carousel .logo__bottom {
   font-family: "Museo Sans Cyrl 500 Regular";
   font-size: 0.7em;
@@ -117,7 +107,6 @@ header .carousel .logo__bottom {
   margin-top: -7px;
   margin-right: 1.1em;
 }
-
 header .carousel .line {
   display: block;
   height: 1px;
@@ -125,7 +114,6 @@ header .carousel .line {
   width: 176px;
   margin: 5px 0px;
 }
-
 header .carousel .text {
   font-family: "Museo Sans Cyrl 500 Regular";
   text-align: center;
@@ -143,7 +131,6 @@ header .carousel .text {
   gap: 5px;
   margin-top: 10px;
 }
-
 .carousel-indicators li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,120 +146,96 @@ header .carousel .text {
 .dark-mode {
   background-color: #343434;
 }
-
 .dark-mode header .carousel .static-carousel-item {
   background-color: rgb(65, 65, 65);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide__examples__item .caption {
   font-family: "Museo Sans Cyrl 300 Regular";
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide ::-webkit-input-placeholder {
   background: rgb(65, 65, 65);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide ::-moz-placeholder {
   background: rgb(65, 65, 65);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide :-ms-input-placeholder {
   background: rgb(65, 65, 65);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide ::-ms-input-placeholder {
   background: rgb(65, 65, 65);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide input,
 .dark-mode .services_we_provide ::placeholder {
   background: rgb(65, 65, 65);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide .row_buttons_group {
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide .row_buttons_group .grey_button {
   color: #343434;
 }
-
 .dark-mode .services_we_provide .down_arrow {
   background-color: rgba(255, 255, 255, 0.8392156863);
   border-radius: 50%;
 }
-
 .dark-mode .services_we_provide .services_we_provide__examples__item .header p {
   color: rgb(153, 155, 154);
 }
-
 .dark-mode .services_we_provide .num_buttons button {
   color: rgba(255, 255, 255, 0.2274509804);
 }
-
 .dark-mode .services_we_provide .num_buttons button:active {
   background-color: rgba(255, 255, 255, 0.1058823529);
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode .services_we_provide .num_buttons button:hover {
   background-color: rgba(255, 255, 255, 0.1058823529);
 }
-
 .dark-mode .services_we_provide .num_buttons .arr-prev,
 .dark-mode .services_we_provide .num_buttons .arr-next {
   background-color: rgba(179, 179, 168, 0.3607843137);
 }
-
 .dark-mode .instructional_design .instructional_design_text,
 .dark-mode .checkpoint {
   color: rgba(255, 255, 255, 0.8392156863);
 }
-
 .dark-mode #chat-widget {
   display: none;
 }
-
 .dark-mode #chat-widget.show {
   border-radius: 10px;
   background: #414141;
   -webkit-box-shadow: 0px 3.8181819916px 15.2727279663px 0px rgba(52, 52, 52, 0.1);
-  box-shadow: 0px 3.8181819916px 15.2727279663px 0px rgba(52, 52, 52, 0.1);
+          box-shadow: 0px 3.8181819916px 15.2727279663px 0px rgba(52, 52, 52, 0.1);
   background-color: rgb(65, 65, 65);
 }
-
 .dark-mode #chat-widget #chat-messages {
   color: rgb(255, 255, 255);
 }
-
 .dark-mode #chat-widget .message-time {
   color: rgba(246, 246, 246, 0.441);
 }
-
 .dark-mode #chat-widget #chat-input {
   background-color: #545454;
   color: rgb(233, 233, 233);
 }
-
 .dark-mode #chat-widget .input-content {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #545454;
   border-top: solid 2px rgb(181, 183, 182);
 }
-
 .dark-mode #chat-widget .chat-message.user {
   background-color: rgba(255, 255, 255, 0.05);
   color: #e6e6e6;
 }
-
 .dark-mode #chat-widget .chat-message.operator {
   background-color: rgba(41, 180, 173, 0.15);
   color: #baa2a2;
@@ -293,7 +256,7 @@ header .carousel .text {
   font-size: 12px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   color: #333;
   background-color: rgb(235, 235, 235);
   padding: 5px 20px;
@@ -302,7 +265,7 @@ header .carousel .text {
 
 .toggle-ball {
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: 0.5s ease-in-out;
@@ -368,15 +331,15 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-radius: 27px;
   padding: 5px 30px;
   max-width: 150px;
@@ -385,7 +348,7 @@ input {
   color: #ffffff;
   cursor: pointer;
   -webkit-box-shadow: 0 0 7px 0.1px rgba(10, 41, 10, 0.403);
-  box-shadow: 0 0 7px 0.1px rgba(10, 41, 10, 0.403);
+          box-shadow: 0 0 7px 0.1px rgba(10, 41, 10, 0.403);
 }
 
 .services_we_provide {
@@ -394,23 +357,21 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 35px;
   padding: 50px;
 }
-
 .services_we_provide .header {
   font-family: "Museo Sans Cyrl 700 Regular";
   color: rgb(153, 155, 154);
   -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
-
 .services_we_provide .services_we_provide__search__row {
   font-family: "Museo Sans Cyrl 500 Regular";
   display: -webkit-box;
@@ -423,67 +384,63 @@ input {
   align-self: start;
   gap: 5%;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   gap: 10px;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .round_arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background-color: rgb(235, 235, 235);
   width: 25px;
   height: 25px;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .round_arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background-color: rgb(235, 235, 235);
   width: 25px;
   height: 25px;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 6px;
   border-radius: 14px;
   padding: 5px;
@@ -494,12 +451,10 @@ input {
   -webkit-transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show {
   max-height: 32px;
   opacity: 1;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .gold-bg,
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .green-bg,
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .green-border,
@@ -510,34 +465,29 @@ input {
   -webkit-transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .gold-bg {
   background-color: rgb(220, 206, 144);
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .green-bg {
   background-color: rgb(61, 148, 140);
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .green-border {
   border: 1px solid rgb(61, 148, 140);
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .typesbar.show .grey-border {
   border: 1px solid rgb(181, 183, 182);
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .grey_button {
   font-family: "Museo Sans Cyrl 500 Regular";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgb(235, 235, 235);
   max-height: -webkit-min-content;
   max-height: -moz-min-content;
@@ -549,7 +499,6 @@ input {
   font-size: 15px;
   border-radius: 14.5px;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .hidden_vars {
   font-family: "Museo Sans Cyrl 500 Regular";
   display: -webkit-box;
@@ -561,13 +510,11 @@ input {
   -webkit-transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .hidden_vars.show {
   gap: 5px;
   max-height: 120px;
   opacity: 1;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .hidden_vars.show p {
   font-family: "Museo Sans Cyrl 500 Regular";
   display: -webkit-box;
@@ -575,7 +522,6 @@ input {
   display: flex;
   gap: 5px;
 }
-
 .services_we_provide .services_we_provide__search__row .row_buttons_group .hidden_vars.show p .grey_button {
   margin: 2px;
 }
@@ -586,7 +532,6 @@ input {
 #swp-light-border {
   display: none;
 }
-
 #swp-gold-bg.active,
 #swp-green-bg.active,
 #swp-green-border.active,
@@ -595,10 +540,9 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 #swp-gold-bg .services_we_provide__examples__item .gold-bg .short_line,
 #swp-green-bg .services_we_provide__examples__item .gold-bg .short_line,
 #swp-green-border .services_we_provide__examples__item .gold-bg .short_line,
@@ -606,7 +550,6 @@ input {
   background-color: rgb(220, 206, 144);
   height: 1px;
 }
-
 #swp-gold-bg .services_we_provide__examples__item,
 #swp-green-bg .services_we_provide__examples__item,
 #swp-green-border .services_we_provide__examples__item,
@@ -618,14 +561,13 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
   max-width: 250px;
   font-size: 16px;
   line-height: 145%;
 }
-
 #swp-gold-bg .services_we_provide__examples__item .header,
 #swp-green-bg .services_we_provide__examples__item .header,
 #swp-green-border .services_we_provide__examples__item .header,
@@ -637,7 +579,6 @@ input {
   margin-bottom: 15px;
   color: rgb(33, 33, 33);
 }
-
 #swp-gold-bg .services_we_provide__examples__item img,
 #swp-green-bg .services_we_provide__examples__item img,
 #swp-green-border .services_we_provide__examples__item img,
@@ -654,7 +595,6 @@ input {
   border-radius: 10px;
   max-width: 300px;
 }
-
 .services_we_provide__search input {
   resize: none;
   outline: none;
@@ -665,37 +605,32 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 27px;
   max-width: 300px;
   padding: 10px 24px 10px 24px;
 }
-
 .services_we_provide__search ::-webkit-input-placeholder {
   font-family: "Museo Sans Cyrl 500 Regular";
   background-color: rgb(235, 235, 235);
   color: rgb(52, 52, 52);
 }
-
 .services_we_provide__search ::-moz-placeholder {
   font-family: "Museo Sans Cyrl 500 Regular";
   background-color: rgb(235, 235, 235);
   color: rgb(52, 52, 52);
 }
-
 .services_we_provide__search :-ms-input-placeholder {
   font-family: "Museo Sans Cyrl 500 Regular";
   background-color: rgb(235, 235, 235);
   color: rgb(52, 52, 52);
 }
-
 .services_we_provide__search ::-ms-input-placeholder {
   font-family: "Museo Sans Cyrl 500 Regular";
   background-color: rgb(235, 235, 235);
   color: rgb(52, 52, 52);
 }
-
 .services_we_provide__search ::placeholder {
   font-family: "Museo Sans Cyrl 500 Regular";
   background-color: rgb(235, 235, 235);
@@ -708,13 +643,12 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 .num_buttons button {
   text-decoration: none;
   color: inherit;
@@ -722,11 +656,11 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   font-size: 16px;
   color: rgb(52, 52, 52);
@@ -735,13 +669,11 @@ input {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .num_buttons button:hover {
   background-color: rgb(235, 235, 235);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .num_buttons button:active {
   background-color: rgb(235, 235, 235);
 }
@@ -751,8 +683,8 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .services_we_provide__examples__item .gold-bg .short_line {
@@ -767,24 +699,21 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
   max-width: 200px;
   font-size: 14px;
 }
-
 .services_we_provide__examples__item .header {
   font-family: "Museo Sans Cyrl 500 Regular 700";
   font-size: 16px;
   margin-top: 30px;
   margin-bottom: 15px;
 }
-
 .services_we_provide__examples__item img {
   max-width: 85px;
 }
-
 .services_we_provide__examples__item .short_line {
   display: block;
   height: 1px;
@@ -808,42 +737,40 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   bottom: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgb(52, 52, 52);
   color: rgb(146, 146, 146);
 }
-
 footer .footer_buttons_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-
 footer .copyright {
   font-family: "Museo Sans Cyrl 500 Regular";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgb(56, 56, 56);
   color: rgb(89, 89, 89);
   padding: 15px;
@@ -875,11 +802,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   scroll-behavior: smooth;
@@ -902,8 +829,8 @@ header {
 .navbar {
   font-family: "Museo Sans Cyrl 500 Regular";
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   background-color: rgb(52, 52, 52);
   color: rgba(240, 248, 255, 0.453);
@@ -918,15 +845,14 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
 .navbar_logo .navbar_logo__bottom {
   font-size: 0.7em;
   letter-spacing: 0.2em;
   -ms-flex-item-align: end;
-  align-self: flex-end;
+      align-self: flex-end;
   margin-top: -7px;
   margin-right: 1.1em;
 }
@@ -936,11 +862,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar_buttons__a {
@@ -953,7 +879,7 @@ header {
 
 .form-for-border {
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
   width: 90%;
   padding: 50px 50px 50px 0px;
   border-radius: 20px;
@@ -969,44 +895,39 @@ header {
   border-bottom-right-radius: 15px;
   width: 100%;
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
   padding-left: 10%;
   padding-right: 10%;
 }
-
 .we_design_learning .header {
   font-family: "Museo Sans Cyrl 700 Regular";
   font-size: 75px;
   color: rgb(66, 66, 66);
 }
-
 .we_design_learning .header span {
   font-size: 80px;
 }
-
 .we_design_learning .description {
   font-family: "Museo Sans Cyrl 300 Regular";
   font-size: 35px;
 }
-
 .we_design_learning .we_design_learning__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   bottom: 100%;
 }
-
 .we_design_learning .we_design_learning__group_col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
   max-width: 437px;
 }
@@ -1017,12 +938,10 @@ header {
   padding: 50px;
   color: rgb(66, 66, 66);
 }
-
 .instructional_design .header {
   font-family: "Museo Sans Cyrl 700 Regular";
   color: rgb(153, 155, 154);
 }
-
 .instructional_design .instructional_design_text {
   font-family: "Museo Sans Cyrl 300 Regular";
   color: rgb(66, 66, 66);
@@ -1031,12 +950,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 25px;
   max-width: 540px;
 }
-
 .instructional_design .instructional_design_group_row {
   font-family: "Museo Sans Cyrl 300 Regular";
   color: rgb(66, 66, 66);
@@ -1044,18 +962,16 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
-
 .instructional_design .instructional_design_round {
   max-width: 390px;
 }
-
 .instructional_design .checkpoints {
   font-family: "Museo Sans Cyrl 300 Regular";
   color: rgb(66, 66, 66);
@@ -1064,13 +980,12 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
   font-size: 16px;
   line-height: 150%;
 }
-
 .instructional_design .checkpoints .checkpoint img {
   margin-right: 10px;
 }
@@ -1082,33 +997,31 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: rgb(61, 148, 140);
   color: rgb(255, 255, 255);
   gap: 10px;
   padding: 50px;
 }
-
 .form_section .form_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   max-width: 680px;
 }
-
 .form_section .form_content input,
 .form_section .form_content textarea {
   font-family: "Museo Sans Cyrl 300 Regular";
@@ -1123,42 +1036,35 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 27px;
   padding: 10px 24px;
   width: 30em;
 }
-
 .form_section .form_content textarea {
   height: 10em;
 }
-
 .form_section .form_content ::-webkit-input-placeholder {
   background-color: rgb(65, 162, 151);
   color: rgb(255, 255, 255);
 }
-
 .form_section .form_content ::-moz-placeholder {
   background-color: rgb(65, 162, 151);
   color: rgb(255, 255, 255);
 }
-
 .form_section .form_content :-ms-input-placeholder {
   background-color: rgb(65, 162, 151);
   color: rgb(255, 255, 255);
 }
-
 .form_section .form_content ::-ms-input-placeholder {
   background-color: rgb(65, 162, 151);
   color: rgb(255, 255, 255);
 }
-
 .form_section .form_content ::placeholder {
   background-color: rgb(65, 162, 151);
   color: rgb(255, 255, 255);
 }
-
 .form_section .form_content input:-webkit-autofill,
 .form_section .form_content input:-webkit-autofill:hover,
 .form_section .form_content input:-webkit-autofill:focus {
@@ -1174,11 +1080,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgb(41, 180, 173);
   border: none;
   height: 65px;
@@ -1188,7 +1094,6 @@ header {
   right: 20px;
   z-index: 1;
 }
-
 .chat-wiget-button img {
   height: 66px;
   width: 66px;
@@ -1200,11 +1105,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgb(41, 180, 173);
   border: none;
   height: 65px;
@@ -1214,7 +1119,6 @@ header {
   right: 20px;
   z-index: 1;
 }
-
 .chat-widget-button img {
   height: 66px;
   width: 66px;
@@ -1223,7 +1127,6 @@ header {
 #chat-widget {
   display: none;
 }
-
 #chat-widget.show {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1233,60 +1136,54 @@ header {
   right: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 344px;
   height: 420px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   z-index: 1;
 }
-
 #chat-widget button {
   background-color: inherit;
   border: none;
 }
-
 #chat-widget #chat-header {
   font-family: "Museo Sans Cyrl 500 Regular";
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5px;
   background-color: rgb(41, 180, 173);
   color: #fff;
   padding: 15px 18px;
   border-radius: 10px;
 }
-
 #chat-widget #chat-header .right-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
-
 #chat-widget #chat-header .right-group .chat-name {
   font-size: 16px;
 }
-
 #chat-widget #chat-header .right-group .chat-name-description {
   font-size: 12px;
   opacity: 0.5;
 }
-
 #chat-widget #chat-messages {
   font-family: "Museo Sans Cyrl 500 Regular";
   padding: 10px;
@@ -1295,36 +1192,32 @@ header {
   overflow-y: auto;
   font-size: 14px;
 }
-
 #chat-widget #chat-messages .message-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
 }
-
 #chat-widget #chat-messages .message-container .timestamp {
   font-size: 9px;
   margin-top: 5px;
   text-align: right;
 }
-
 #chat-widget .message-time {
   font-family: "Museo Sans Cyrl 300 Regular";
   color: rgba(56, 56, 56, 0.25);
   font-size: 10px;
   font-weight: 300;
 }
-
 #chat-widget #chat-input {
   width: 100%;
   color: rgb(56, 56, 56);
@@ -1332,7 +1225,6 @@ header {
   padding: 10px;
   font-size: 14px;
 }
-
 #chat-widget .input-content {
   font-family: "Museo Sans Cyrl 300 Regular";
   display: -webkit-box;
@@ -1340,37 +1232,32 @@ header {
   display: flex;
   max-width: 100%;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   border-top: solid 2px rgb(235, 235, 235);
 }
-
 #chat-widget .input-content .input-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 #chat-widget .input-content .input-buttons .img-svg:active path {
   fill: rgb(41, 180, 173);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 #chat-widget .chat-message {
   font-family: "Museo Sans Cyrl 300 Regular";
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
 }
-
 #chat-widget .chat-message.user {
   background-color: rgba(52, 52, 52, 0.05);
   color: #3e3636;
   text-align: right;
 }
-
 #chat-widget .chat-message.operator {
   background-color: rgba(41, 180, 173, 0.05);
   color: #000;
@@ -1381,65 +1268,56 @@ header {
   header {
     padding: 90px;
   }
-
   .carousel .static-carousel-item {
     max-height: 320px;
   }
-
   .carousel .carousel-item img {
     height: 340px;
   }
 }
-
 @media screen and (min-width: 476px) and (max-width: 1000px) {
-
   html,
   body {
     overflow-x: hidden;
   }
-
   header {
     padding: 20px;
   }
-
   .carousel-item {
     max-height: 200px;
     padding: 0px;
   }
-
   .carousel-item img {
     max-height: 210px;
     padding: 0px;
   }
-
   .carousel .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 10px;
     -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
-
   .carousel .static-carousel-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     background-color: #fff;
     max-height: 200px;
     padding: 0px;
@@ -1447,12 +1325,10 @@ header {
     max-width: 200px;
     z-index: 1;
   }
-
   .carousel .static-carousel-item .text {
     text-align: center;
     font-size: 13px;
   }
-
   .toggle-button {
     height: 20px;
     border: none;
@@ -1462,18 +1338,15 @@ header {
     z-index: 1;
     margin-top: 20px;
   }
-
   .carousel-inner {
     overflow: visible;
   }
-
   .carousel-indicators {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 5px;
   }
-
   .carousel-indicators li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1485,34 +1358,29 @@ header {
     width: 15px;
     border-radius: 50%;
   }
-
   .services_we_provide {
     max-width: 100%;
   }
-
   .services_we_provide .services_we_provide__search__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: space-around;
-    -ms-flex-align: space-around;
-    align-items: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
     padding: 10px;
     gap: 20px;
   }
-
   .services_we_provide .services_we_provide__search__row input {
     width: 100%;
   }
-
   .services_we_provide #swp-gold-bg,
   .services_we_provide #swp-green-bg,
   .services_we_provide #swp-green-border,
   .services_we_provide #swp-light-border {
     display: none;
   }
-
   .services_we_provide #swp-gold-bg.active,
   .services_we_provide #swp-green-bg.active,
   .services_we_provide #swp-green-border.active,
@@ -1521,10 +1389,9 @@ header {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .services_we_provide #swp-gold-bg .services_we_provide__examples__item,
   .services_we_provide #swp-green-bg .services_we_provide__examples__item,
   .services_we_provide #swp-green-border .services_we_provide__examples__item,
@@ -1534,121 +1401,105 @@ header {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10px;
     max-width: 166px;
     font-size: 14px;
   }
-
   .form-for-border .we_design_learning .we_design_learning__group_col {
     gap: 10px;
   }
-
   .form-for-border .we_design_learning .we_design_learning__group_col .header {
     font-size: 65px;
   }
-
   html,
   body {
     overflow-x: hidden;
   }
-
   .instructional_design {
     padding: 10px;
     margin-bottom: 40px;
   }
-
   .instructional_design .header {
     max-width: 80%;
     color: rgb(153, 155, 154);
     font-size: 50px;
   }
-
   .instructional_design .instructional_design_text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 25px;
     max-width: 100%;
   }
-
   .instructional_design .instructional_design_group_row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
   }
-
   .instructional_design .instructional_design_group_row.sec-part {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
   }
-
   .instructional_design .instructional_design_round img {
     max-width: 320px;
   }
-
   .instructional_design .header,
   .instructional_design .hader_mini {
     text-align: center;
   }
-
   .form_section .header,
   .form_section .hader_mini {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 476px) {
   .button_color {
     padding: 10px;
   }
-
   html,
   body {
     overflow-x: hidden;
   }
-
   body {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-
   .carousel .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 10px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .carousel .static-carousel-item {
     background-color: #fff;
     padding: 10px;
@@ -1656,11 +1507,9 @@ header {
     width: 100%;
     z-index: 1;
   }
-
   .carousel .carousel-inner {
     position: relative;
   }
-
   .carousel .carousel-item {
     display: none;
     width: 100%;
@@ -1668,104 +1517,96 @@ header {
     -webkit-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
   }
-
   .carousel .carousel-item.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     opacity: 1;
   }
-
   .carousel .carousel-item img {
     max-width: 100%;
     height: auto;
     padding: 10px;
     border-radius: 20px;
   }
-
   .carousel .carousel-indicators {
     display: none;
   }
-
   .navbar {
     -webkit-box-pack: baseline;
-    -ms-flex-pack: baseline;
-    justify-content: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
     width: 100%;
     background-color: rgb(52, 52, 52);
     color: rgba(240, 248, 255, 0.453);
     font-size: 14px;
     padding: 10px;
   }
-
   .navbar .navbar_buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 90%;
   }
-
   .navbar .navbar_buttons a {
     width: 153px;
   }
-
   .services_we_provide {
     max-width: 320px;
   }
-
   .services_we_provide .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 80%;
   }
-
   .services_we_provide .services_we_provide__search__row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
-
+  .services_we_provide .row_buttons_group .hidden_vars.show p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .services_we_provide__search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 10px;
     max-width: 300px;
   }
-
   .services_we_provide__examples {
     max-width: 100%;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
   }
-
   .services_we_provide__examples__item {
     max-width: 100%;
   }
-
   .form-for-border {
     -ms-flex-item-align: start;
-    align-self: flex-start;
+        align-self: flex-start;
     width: 100%;
   }
-
   .form-for-border .we_design_learning {
     width: 100%;
     background-size: cover;
@@ -1775,198 +1616,169 @@ header {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     -ms-flex-item-align: start;
-    align-self: flex-start;
+        align-self: flex-start;
     padding-left: 10%;
     padding-right: 10%;
   }
-
   .form-for-border .we_design_learning .wdl_man {
     width: 207px;
     height: 340px;
     bottom: 100%;
   }
-
   .form-for-border .we_design_learning .header {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.3em;
     color: rgb(66, 66, 66);
   }
-
   .form-for-border .we_design_learning .header span {
     font-size: 40px;
   }
-
   .form-for-border .we_design_learning .description {
     font-size: 20px;
     font-weight: 300;
   }
-
   .we_design_learning .we_design_learning__group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
   .we_design_learning .we_design_learning__group img {
     -ms-flex-item-align: end;
-    align-self: flex-end;
+        align-self: flex-end;
   }
-
   .we_design_learning .we_design_learning__group .we_design_learning__group_col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 120px;
     gap: 10px;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
     margin-bottom: 30px;
   }
-
   .instructional_design {
     padding: 10px;
     margin-bottom: 40px;
   }
-
   .instructional_design .instructional_design_round img {
     max-width: 300px;
   }
-
   .instructional_design .header {
     max-width: 80%;
     color: rgb(153, 155, 154);
     font-size: 50px;
   }
-
   .instructional_design .instructional_design_text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 25px;
     max-width: 100%;
   }
-
   .instructional_design .instructional_design_group_row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
   }
-
   .instructional_design .instructional_design_group_row.sec-part {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
   }
-
   .instructional_design .header,
   .instructional_design .hader_mini {
     text-align: center;
   }
-
   .form_section {
     width: 100%;
     padding: 10px;
   }
-
   .form_section .form_content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 10px;
     max-width: 300px;
   }
-
   .form_section .form_content .header {
     font-size: 40px;
     text-align: center;
   }
-
   .form_section .form_content .hader_mini {
     font-size: 18px;
     text-align: center;
   }
-
   .form_section .form_content input,
   .form_section .form_content textarea {
     padding: 15px;
     width: 300px;
   }
-
   .form_section .form_content textarea {
     height: 10em;
   }
-
   .form_section .form_content ::-webkit-input-placeholder {
     background-color: rgb(65, 162, 151);
     color: rgba(255, 255, 255, 0.695);
   }
-
   .form_section .form_content ::-moz-placeholder {
     background-color: rgb(65, 162, 151);
     color: rgba(255, 255, 255, 0.695);
   }
-
   .form_section .form_content :-ms-input-placeholder {
     background-color: rgb(65, 162, 151);
     color: rgba(255, 255, 255, 0.695);
   }
-
   .form_section .form_content ::-ms-input-placeholder {
     background-color: rgb(65, 162, 151);
     color: rgba(255, 255, 255, 0.695);
   }
-
   .form_section .form_content ::placeholder {
     background-color: rgb(65, 162, 151);
     color: rgba(255, 255, 255, 0.695);
   }
-
   .form_section .header,
   .form_section .hader_mini {
     text-align: center;
   }
-
   #chat-widget {
     display: none;
   }
-
   #chat-widget.show {
     max-width: 300px;
   }
 }
-
 body::-webkit-scrollbar {
   width: 0.7em;
   background-color: rgba(230, 221, 221, 0.8470588235);
