@@ -64,48 +64,92 @@ function slowScroll(id) {
     return false;
 }
 
+
 // search
 
-const input = document.querySelector('.input_search');
-const hiddenVars = document.querySelector('.hidden_vars');
-const buttons = hiddenVars.querySelectorAll('.grey_button');
-const items = document.querySelectorAll('.services_we_provide__examples__item');
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.querySelector('.input_search');
+    const hiddenVars = document.querySelector('.hidden_vars');
+    const buttons = hiddenVars.querySelectorAll('.grey_button');
+    const items = document.querySelectorAll('.services_we_provide__examples__item');
 
-input.addEventListener('input', () => {
-    const inputValue = input.value.toLowerCase();
+    // show/hide buttons
+    input.addEventListener('input', () => {
+        const inputValue = input.value.toLowerCase();
 
-    buttons.forEach(button => {
-        const buttonText = button.textContent.toLowerCase();
-        if (buttonText.startsWith(inputValue)) {
-            button.style.display = 'block';
+        buttons.forEach(button => {
+            const buttonText = button.textContent.toLowerCase();
+            if (buttonText.startsWith(inputValue)) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        if (inputValue) {
+            hiddenVars.classList.add('show');
         } else {
-            button.style.display = 'none';
+            hiddenVars.classList.remove('show');
         }
+
+        items.forEach(item => {
+            const headerText = item.querySelector('.header').textContent.toLowerCase();
+            if (headerText.includes(inputValue)) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
     });
 
-    if (inputValue) {
-        hiddenVars.classList.add('show');
-    } else {
-        hiddenVars.classList.remove('show');
-    }
+    // show/hide hidden_vars"
+    let button = document.querySelector(".down_arrow");
+    let typesbar = document.querySelector(".hidden_vars");
+    let occupationAllButton = document.querySelector("#occupation_all");
 
-    items.forEach(item => {
-        const headerText = item.querySelector('.header').textContent.toLowerCase();
-        if (headerText.includes(inputValue)) {
+    button.addEventListener("click", function () {
+        typesbar.classList.toggle("show");
+    });
+
+    occupationAllButton.addEventListener("click", function () {
+        input.value = "";
+
+        buttons.forEach(function (button) {
+            button.style.display = "block";
+        });
+
+        typesbar.classList.remove("show");
+
+        items.forEach(function (item) {
             item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden');
-        }
+        });
     });
-});
 
+// show item
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        const buttonText = button.textContent;
-        input.value = buttonText;
-        input.dispatchEvent(new Event('input')); // Simulate input events to actualize hiding
+        const buttonText = button.textContent.trim().toLowerCase();  // Приводим к нижнему регистру
+
+        items.forEach(item => {
+            item.classList.add('hidden');
+        });
+
+        const selectedItem = Array.from(items).find(item => {
+            const headerText = item.querySelector('.header').textContent
+                                .replace(/\s+/g, ' ')  // Удаление лишних пробелов
+                                .trim().toLowerCase();  // Приводим к нижнему регистру
+
+            return headerText === buttonText;
+        });
+
+        if (selectedItem) {
+            selectedItem.classList.remove('hidden');
+        }
     });
 });
+
+});
+
 
 
 // show types
@@ -117,40 +161,6 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
         typesbar.classList.toggle("show");
     });
-});
-
-
-// show occupations
-
-document.addEventListener("DOMContentLoaded", function () {
-    var button = document.querySelector(".down_arrow");
-    var typesbar = document.querySelector(".hidden_vars");
-    var input = document.querySelector(".input_search");
-    var occupationAllButton = document.querySelector("#occupation_all");
-    var items = document.querySelectorAll(".services_we_provide__examples__item");
-    var buttons = document.querySelectorAll(".grey_button");
-
-    button.addEventListener("click", function () {
-        typesbar.classList.toggle("show");
-    });
-
-    occupationAllButton.addEventListener("click", function () {
-        input.value = "";
-
-
-        buttons.forEach(function (button) {
-            button.style.display = "block";
-        });
-
-
-        typesbar.classList.remove("show");
-
-
-        items.forEach(function (item) {
-            item.classList.remove("hidden");
-        });
-    });
-
 });
 
 
@@ -200,7 +210,6 @@ nextButton.addEventListener('click', () => {
 // Initial setup
 const blocks = document.querySelectorAll('.services_we_provide__examples');
 toggleBlock(blocks[currentIndex].id);
-
 
 
 
