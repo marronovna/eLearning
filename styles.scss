@@ -1542,21 +1542,16 @@ $green-neon: rgba(41, 180, 173, 1);
 
             .wdl_man {
 
-                width: 207px;
-                height: 340px;
+                width: 300px;
                 bottom: 100%;
 
             }
 
             .header {
-                font-size: 40px;
+                font-size: 45px;
                 font-weight: 700;
-                line-height: 1.3em;
+                line-height: 1.5em;
                 color: rgba(66, 66, 66, 1);
-
-                span {
-                    font-size: 40px;
-                }
             }
 
             .description {
@@ -1694,6 +1689,36 @@ $green-neon: rgba(41, 180, 173, 1);
     }
 
 }
+
+
+@media screen and (max-width: 370px) {
+
+    // we_design_learning
+
+
+
+    .form-for-border {
+        align-self: flex-start;
+        width: 100%;
+
+
+        .we_design_learning .wdl_man {
+
+            max-width: 207px;
+            bottom: 100%;
+
+        }
+
+        .header {
+            font-size: 40px !important;
+            line-height: 1.3em !important;
+        }
+
+    }
+}
+
+
+
 
 // scrolling
 
