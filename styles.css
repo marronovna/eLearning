@@ -1621,18 +1621,14 @@ header {
     padding-right: 10%;
   }
   .form-for-border .we_design_learning .wdl_man {
-    width: 207px;
-    height: 340px;
+    width: 300px;
     bottom: 100%;
   }
   .form-for-border .we_design_learning .header {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
-    line-height: 1.3em;
+    line-height: 1.5em;
     color: rgb(66, 66, 66);
-  }
-  .form-for-border .we_design_learning .header span {
-    font-size: 40px;
   }
   .form-for-border .we_design_learning .description {
     font-size: 20px;
@@ -1779,14 +1775,18 @@ header {
     max-width: 300px;
   }
 }
-body::-webkit-scrollbar {
-  width: 0.7em;
-  background-color: rgba(230, 221, 221, 0.8470588235);
-  padding: 5px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(52, 52, 52);
-  padding: 5px;
-  width: 1em;
+@media screen and (max-width: 370px) {
+  .form-for-border {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+  }
+  .form-for-border .we_design_learning .wdl_man {
+    max-width: 207px;
+    bottom: 100%;
+  }
+  .form-for-border .header {
+    font-size: 40px !important;
+    line-height: 1.3em !important;
+  }
 }
